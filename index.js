@@ -1,6 +1,2 @@
 
-import Content from './src/firstPage';
-
-
-
-
+import render from './src/firstPage';
