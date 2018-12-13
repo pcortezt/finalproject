@@ -1,8 +1,6 @@
-export default function render(){
-    `<p>History is write by the victors</p>
+export default function HelloWorld(){
+    return `
+    
+    <p>History is write by the victors</p>
 `;
 }
-
-render();
-
-
