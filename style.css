@@ -7,29 +7,41 @@ body {
     font-family: 'Allerta Stencil', sans-serif;
     font-size: 15vw;
     text-align: center;
-    animation-name: fadeIn; 				
-	animation-duration: 8s;        			
-    animation-iteration-count:1;
+    animation-name: fadeIn;
+    animation-duration: 8s;
+    animation-iteration-count: 1;
     animation-fill-mode: both;
 }
 
-@keyframes fadeIn { 
-	0% {opacity: 0;} 
-    100% {opacity: 1;} 
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
     }
-
-.container{
+    100% {
+        opacity: 1;
+    }
     
+}
+
+.container:after {
+    animation-name: fadeIn2;
     opacity: 0;
     font-family: 'Allerta Stencil', sans-serif;
     font-size: 15vw;
     text-align: center;
-    animation-name: fadeIn2; 				
-	animation-duration: 16s;        			
-    animation-iteration-count:1;
+    animation-duration: 8s;
+    animation-iteration-count: 1;
     animation-fill-mode: both;
 }
-@keyframes fadeIn2 { 
-	0% {opacity: 0;} 
-    100% {opacity: 1; text-decoration: line-through;} 
+
+@keyframes fadeIn2 {
+    0% {
+        opacity: 0;
+       
     }
+    100% {
+        opacity: 1;
+        text-decoration: line-through;
+    }
+}
+
