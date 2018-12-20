@@ -3,4 +3,5 @@ export default function HelloWorld(){
     
     <p>History is write by the victors</p>
 `;
+
 }

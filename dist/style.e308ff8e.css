@@ -1,16 +1,23 @@
-body {
-    background-color: white;
+html{
+    height: 100%;
 }
 
-#content {
-    opacity: 0;
+body {
+    background-color: white;
+    min-height: 100%;
+    margin: auto;
+    padding: auto;
+    overflow: hidden;
+    position:fixed;
+}
+
+#content{
     font-family: 'Allerta Stencil', sans-serif;
     font-size: 15vw;
     text-align: center;
     animation-name: fadeIn;
     animation-duration: 8s;
     animation-iteration-count: 1;
-    animation-fill-mode: both;
 }
 
 @keyframes fadeIn {
@@ -23,25 +30,23 @@ body {
     
 }
 
-.container:after {
+#container{
+    text-decoration: line-through;
     animation-name: fadeIn2;
-    opacity: 0;
-    font-family: 'Allerta Stencil', sans-serif;
-    font-size: 15vw;
-    text-align: center;
-    animation-duration: 8s;
+    animation-duration: 16s;
     animation-iteration-count: 1;
-    animation-fill-mode: both;
 }
 
 @keyframes fadeIn2 {
     0% {
-        opacity: 0;
-       
+        text-decoration-color: rgba(0, 0, 0, 0);
+    }
+    50%{
+        text-decoration-color: rgba(0, 0, 0, 0);
     }
     100% {
-        opacity: 1;
-        text-decoration: line-through;
+        text-decoration-color: black;
     }
+    
 }
 

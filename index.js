@@ -5,11 +5,22 @@ var root = document.querySelector('#root')
 function render() {
     root.innerHTML = `
     <div id="content">
-    <div class="container">
-        ${HelloWorld()};
+    <div id="container">
+        ${HelloWorld()}
     </div>
      </div>
     `;
 }
 
 render();
+
+
+
+//var content = root.querySelector('#content');
+//setTimeout (function(){
+//    content.classList.add('strike');
+//}, 8000)
+//var container = document.querySelector('.container');
+//document.onload = function(){
+  //  container.classList.add(' strike');
+//}

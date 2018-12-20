@@ -125,11 +125,18 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var root = document.querySelector('#root');
 
 function render() {
-  root.innerHTML = "\n    <div id=\"content\">\n    <div class=\"container\">\n        ".concat((0, _firstPage.default)(), ";\n    </div>\n     </div>\n    ");
+  root.innerHTML = "\n    <div id=\"content\">\n    <div id=\"container\">\n        ".concat((0, _firstPage.default)(), "\n    </div>\n     </div>\n    ");
 }
 
-render();
-},{"./src/firstPage":"src/firstPage.js"}],"../../../.npm/_npx/21252/lib/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+render(); //var content = root.querySelector('#content');
+//setTimeout (function(){
+//    content.classList.add('strike');
+//}, 8000)
+//var container = document.querySelector('.container');
+//document.onload = function(){
+//  container.classList.add(' strike');
+//}
+},{"./src/firstPage":"src/firstPage.js"}],"../../../.npm/_npx/45440/lib/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -156,7 +163,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52747" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55500" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
@@ -298,5 +305,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},["../../../.npm/_npx/21252/lib/node_modules/parcel/src/builtins/hmr-runtime.js","index.js"], null)
+},{}]},{},["../../../.npm/_npx/45440/lib/node_modules/parcel/src/builtins/hmr-runtime.js","index.js"], null)
 //# sourceMappingURL=/finalProject.e31bb0bc.map
