@@ -5,6 +5,7 @@ body {
     padding: 0; 
     margin: 0;
     border-collapse: collapse;
+    
 }
 
 
@@ -58,50 +59,80 @@ div{
     
 }
 
-#retangle1{
-    width: 2vw;
-    height: 100vh;
-    background: rgba(72, 187, 233, 0.5);
-    transition:1s;
+
+#retangle{
+    animation-delay: 16s;
+    animation-name: recFadeIn;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+@keyframes recFadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
     
-  }
-  
-  #retangle1:hover{
-    transform: scalex(110) 
-  }
-  
-  
-  #retangle2{
-    width: 4vw;
-    height: 100vh;
-    background: rgba(128, 255, 0, 0.5);
-    transition:1s;
-  }
-  
-  #retangle2:hover{
-    transform: scalex(110)
-  }
-  
-  
-  #retangle3{
-    width: 6vw;
-    height: 100vh;
-    background: rgba(158, 51, 230, 0.5);
-    transition:1s;
-  }
-  
-  #retangle3:hover{
-    transform: scalex(110)
-  }
-  
-  
-  #retangle4{
-    width: 8vw;
-    height: 100vh;
-    background: rgba(233, 18, 47, 0.5);
-    transition:1s;
-  }
-  
-  #retangle4:hover{
-    transform: scalex(110)
-  }
+}
+
+.wrapper {
+    text-align: center;
+}
+
+.button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+
+#retangle1{
+  width: 110vw;
+  height: 100vh;
+  transition:1s;
+  transform: translatex(-1560px);
+  background: rgb(72, 187, 233);
+}
+
+#retangle1:hover{
+  transform: translatex(1px);
+}
+#retangle2{
+  width: 110vw;
+  height: 100vh;
+  transition:1s;
+  transform: translatex(-1537px);
+  background: chartreuse;
+}
+
+#retangle2:hover{
+  transform: translatex(1px);
+}
+
+
+#retangle3{
+  width: 110vw;
+  height: 100vh;
+  transition:1s;
+  transform: translatex(-1514px);
+  background: rgb(158, 51, 230);
+}
+
+#retangle3:hover{
+  transform: translatex(1px);
+}
+
+
+#retangle4{
+  width: 110vw;
+  height: 100vh;
+  transition:1s;
+  transform: translatex(-1491px);
+  background: rgb(233, 18, 47);
+}
+
+#retangle4:hover{
+  transform: translatex(1px);
+}
