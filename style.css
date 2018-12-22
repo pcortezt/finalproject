@@ -1,25 +1,32 @@
-html{
-    height: 100%;
-}
-
 body {
     background-color: white;
-    min-height: 100%;
-    margin: auto;
-    padding: auto;
-    overflow: hidden;
-    position:fixed;
+    position: fixed;
+    border: 0px;
+    padding: 0; 
+    margin: 0;
+    border-collapse: collapse;
 }
+
+
+div{
+    position: fixed;
+  }
+
+#root{
+    background-color: rgb(255, 255, 255);
+    min-height: 100vh;
+}
+
 
 #content{
     font-family: 'Allerta Stencil', sans-serif;
-    font-size: 15vw;
+    font-size: 13vw;
     text-align: center;
     animation-name: fadeIn;
-    animation-duration: 8s;
+    animation-duration: 6s;
     animation-iteration-count: 1;
+    animation-fill-mode: both;
 }
-
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -30,13 +37,14 @@ body {
     
 }
 
+
 #container{
     text-decoration: line-through;
     animation-name: fadeIn2;
-    animation-duration: 16s;
+    animation-duration: 12s;
     animation-iteration-count: 1;
+    animation-fill-mode: both;
 }
-
 @keyframes fadeIn2 {
     0% {
         text-decoration-color: rgba(0, 0, 0, 0);
@@ -50,3 +58,50 @@ body {
     
 }
 
+#retangle1{
+    width: 2vw;
+    height: 100vh;
+    background: rgba(72, 187, 233, 0.5);
+    transition:1s;
+    
+  }
+  
+  #retangle1:hover{
+    transform: scalex(110) 
+  }
+  
+  
+  #retangle2{
+    width: 4vw;
+    height: 100vh;
+    background: rgba(128, 255, 0, 0.5);
+    transition:1s;
+  }
+  
+  #retangle2:hover{
+    transform: scalex(110)
+  }
+  
+  
+  #retangle3{
+    width: 6vw;
+    height: 100vh;
+    background: rgba(158, 51, 230, 0.5);
+    transition:1s;
+  }
+  
+  #retangle3:hover{
+    transform: scalex(110)
+  }
+  
+  
+  #retangle4{
+    width: 8vw;
+    height: 100vh;
+    background: rgba(233, 18, 47, 0.5);
+    transition:1s;
+  }
+  
+  #retangle4:hover{
+    transform: scalex(110)
+  }

@@ -4,13 +4,14 @@ var root = document.querySelector('#root');
 
 function render() {
     root.innerHTML = `
+    
     <div id="content">
-    <div id="container">
-        ${HelloWorld()}
+        <div id="container"> 
+    ${HelloWorld()}         
+        </div>
     </div>
-     </div>
     `;
-}
+};
 
 render();
 
