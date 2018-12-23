@@ -1,6 +1,6 @@
-import HelloWorld from './src/firstPage';
+import HelloWorld from './src/firstPage'
 
-var root = document.querySelector('#root');
+var root = document.querySelector('#root')
 
 function render() {
     root.innerHTML = `
@@ -11,7 +11,7 @@ function render() {
         </div>
     </div>
     `;
-};
+}
 
 render();
 

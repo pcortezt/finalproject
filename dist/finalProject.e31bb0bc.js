@@ -128,7 +128,6 @@ function render() {
   root.innerHTML = "\n    \n    <div id=\"content\">\n        <div id=\"container\"> \n    ".concat((0, _firstPage.default)(), "         \n        </div>\n    </div>\n    ");
 }
 
-;
 render(); //var content = root.querySelector('#content');
 //setTimeout (function(){
 //    content.classList.add('strike');

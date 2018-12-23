@@ -1,21 +1,19 @@
+
 body {
     background-color: white;
     position: fixed;
-    border: 0px;
-    padding: 0; 
-    margin: 0;
-    border-collapse: collapse;
+    
     
 }
 
 
 div{
     position: fixed;
+    
   }
 
 #root{
     background-color: rgb(255, 255, 255);
-    min-height: 100vh;
 }
 
 
@@ -27,6 +25,7 @@ div{
     animation-duration: 6s;
     animation-iteration-count: 1;
     animation-fill-mode: both;
+    top: -100px;
 }
 @keyframes fadeIn {
     0% {
@@ -93,7 +92,7 @@ div{
   height: 100vh;
   transition:1s;
   transform: translatex(-1560px);
-  background: rgb(72, 187, 233);
+  background: rgba(233, 18, 47, 0.5);
 }
 
 #retangle1:hover{
@@ -104,7 +103,7 @@ div{
   height: 100vh;
   transition:1s;
   transform: translatex(-1537px);
-  background: chartreuse;
+  background: rgba(72, 187, 233, 0.5);
 }
 
 #retangle2:hover{
@@ -116,8 +115,8 @@ div{
   width: 110vw;
   height: 100vh;
   transition:1s;
-  transform: translatex(-1514px);
-  background: rgb(158, 51, 230);
+  transform: translatex(1414px);
+  background: rgba(128, 255, 0, 0.5);
 }
 
 #retangle3:hover{
@@ -129,8 +128,8 @@ div{
   width: 110vw;
   height: 100vh;
   transition:1s;
-  transform: translatex(-1491px);
-  background: rgb(233, 18, 47);
+  transform: translatex(1391px);
+  background: rgba(158, 51, 230, 0.5);
 }
 
 #retangle4:hover{
