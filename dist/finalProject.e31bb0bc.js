@@ -113,7 +113,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = HelloWorld;
 
 function HelloWorld() {
-  return "\n    <p>History is written by the victors</p>\n";
+  return "\n    <p>History is written by the victors</p>\n    ";
 }
 },{}],"index.js":[function(require,module,exports) {
 "use strict";
@@ -128,15 +128,8 @@ function render() {
   root.innerHTML = "\n    \n    <div id=\"content\">\n        <div id=\"container\"> \n    ".concat((0, _firstPage.default)(), "         \n        </div>\n    </div>\n    ");
 }
 
-render(); //var content = root.querySelector('#content');
-//setTimeout (function(){
-//    content.classList.add('strike');
-//}, 8000)
-//var container = document.querySelector('.container');
-//document.onload = function(){
-//  container.classList.add(' strike');
-//}
-},{"./src/firstPage":"src/firstPage.js"}],"../../../.npm/_npx/77542/lib/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+render();
+},{"./src/firstPage":"src/firstPage.js"}],"../../../.npm/_npx/731/lib/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -163,7 +156,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58359" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49283" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
@@ -305,5 +298,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},["../../../.npm/_npx/77542/lib/node_modules/parcel/src/builtins/hmr-runtime.js","index.js"], null)
+},{}]},{},["../../../.npm/_npx/731/lib/node_modules/parcel/src/builtins/hmr-runtime.js","index.js"], null)
 //# sourceMappingURL=/finalProject.e31bb0bc.map
