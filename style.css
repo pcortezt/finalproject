@@ -92,6 +92,14 @@ div {
     top: 0;
 }
 
+.slider > div {
+    display: none;
+}
+
+.slider:hover > div {
+    display: block;
+}
+
 #retangle .slider:nth-child(1) {
     left: -90vw;
     background: rgba(233, 18, 47, 0.5);

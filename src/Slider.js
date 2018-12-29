@@ -1,9 +1,11 @@
 import Playground from './Playground';
 
-export default function Slider(){
+export default function Slider(state){
     return `
         <div class="slider">
-            ${Playground()}
+            <div>
+                ${Playground(state)}
+            </div>
         </div>
     `;
 }
