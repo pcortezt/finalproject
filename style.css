@@ -1,32 +1,30 @@
-
 body {
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     position: fixed;
-    
-    
 }
 
-
-div{
+div {
     position: fixed;
-    
-  }
-
-#root{
-    background-color: rgb(255, 255, 255);
 }
 
+#root {
+    background-color: rgb(0, 0, 0);
+}
 
-#content{
+#content {
     font-family: 'Allerta Stencil', sans-serif;
+    color: rgb(255, 255, 255);
     font-size: 13vw;
     text-align: center;
     animation-name: fadeIn;
-    animation-duration: 6s;
+    animation-duration: 3s;
     animation-iteration-count: 1;
     animation-fill-mode: both;
     top: -100px;
+    height: 50vw;
+    width: 50vw;
 }
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -34,38 +32,36 @@ div{
     100% {
         opacity: 1;
     }
-    
 }
 
-
-#container{
+#container {
     text-decoration: line-through;
     animation-name: fadeIn2;
-    animation-duration: 12s;
+    animation-duration: 7s;
     animation-iteration-count: 1;
     animation-fill-mode: both;
 }
+
 @keyframes fadeIn2 {
     0% {
         text-decoration-color: rgba(0, 0, 0, 0);
     }
-    50%{
+    50% {
         text-decoration-color: rgba(0, 0, 0, 0);
     }
     100% {
-        text-decoration-color: black;
+        text-decoration-color: rgb(255, 255, 255);
     }
-    
 }
 
-
-#retangle{
-    animation-delay: 16s;
+#retangle {
+    animation-delay: 5s;
     animation-name: recFadeIn;
     animation-duration: 6s;
     animation-iteration-count: 1;
     animation-fill-mode: both;
 }
+
 @keyframes recFadeIn {
     0% {
         opacity: 0;
@@ -73,7 +69,6 @@ div{
     100% {
         opacity: 1;
     }
-    
 }
 
 .wrapper {
@@ -86,52 +81,42 @@ div{
     left: 50%;
 }
 
-
-#retangle1{
-  width: 110vw;
-  height: 100vh;
-  transition:1s;
-  transform: translatex(-1560px);
-  background: rgba(233, 18, 47, 0.5);
+.slider {
+    width: 100vw;
+    height: 100vh;
+    transition: 1s;
+    position: fixed;
+    top: 0;
+    left: -90vw;
 }
 
-#retangle1:hover{
-  transform: translatex(1px);
-}
-#retangle2{
-  width: 110vw;
-  height: 100vh;
-  transition:1s;
-  transform: translatex(-1537px);
-  background: rgba(72, 187, 233, 0.5);
+.slider:hover {
+    left: 0;
 }
 
-#retangle2:hover{
-  transform: translatex(1px);
+.slider.reverse {
+    left: initial;
+    right: -90vw;
 }
 
-
-#retangle3{
-  width: 110vw;
-  height: 100vh;
-  transition:1s;
-  transform: translatex(1414px);
-  background: rgba(128, 255, 0, 0.5);
+.slider.reverse:hover {
+    right: 0;
 }
 
-#retangle3:hover{
-  transform: translatex(1px);
+#retangle1 {
+    background: rgba(233, 18, 47, 0.5);
 }
 
-
-#retangle4{
-  width: 110vw;
-  height: 100vh;
-  transition:1s;
-  transform: translatex(1391px);
-  background: rgba(158, 51, 230, 0.5);
+#retangle2 {
+    left: -95vw;
+    background: rgba(72, 187, 233, 0.5);
 }
 
-#retangle4:hover{
-  transform: translatex(1px);
+#retangle3 {
+    right: -95vw;
+    background: rgba(128, 255, 0, 0.5);
+}
+
+#retangle4 {
+    background: rgba(158, 51, 230, 0.5);
 }
