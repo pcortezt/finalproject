@@ -1,19 +1,17 @@
-import HelloWorld from './src/firstPage';
+import Slider from './src/Slider';
 
-var root = document.querySelector('#root');
 
-function render() {
-    root.innerHTML = `
-    
-    <div id="content">
-        <div id="container"> 
-    ${HelloWorld()}         
-        </div>
-    </div>
-    `;
+var container = document.querySelector('#retangle');
+var sliders = '';
+
+for(let i = 1; i < 5; i++){
+    sliders += Slider();
+}
+
+function render(){
+    container.innerHTML = sliders;
 }
 
 render();
-
 
 

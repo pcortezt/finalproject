@@ -12,6 +12,10 @@ div {
 }
 
 #content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     font-family: 'Allerta Stencil', sans-serif;
     color: rgb(255, 255, 255);
     font-size: 13vw;
@@ -20,9 +24,8 @@ div {
     animation-duration: 3s;
     animation-iteration-count: 1;
     animation-fill-mode: both;
-    top: -100px;
-    height: 50vw;
-    width: 50vw;
+    height: 100vh;
+    width: 100vw;
 }
 
 @keyframes fadeIn {
@@ -87,36 +90,34 @@ div {
     transition: 1s;
     position: fixed;
     top: 0;
+}
+
+#retangle .slider:nth-child(1) {
     left: -90vw;
-}
-
-.slider:hover {
-    left: 0;
-}
-
-.slider.reverse {
-    left: initial;
-    right: -90vw;
-}
-
-.slider.reverse:hover {
-    right: 0;
-}
-
-#retangle1 {
     background: rgba(233, 18, 47, 0.5);
 }
 
-#retangle2 {
+#retangle .slider:nth-child(2) {
     left: -95vw;
     background: rgba(72, 187, 233, 0.5);
 }
 
-#retangle3 {
-    right: -95vw;
+#retangle .slider:nth-child(1):hover,
+#retangle .slider:nth-child(2):hover {
+    left: 0;
+}
+
+#retangle .slider:nth-child(3) {
+    right: -90vw;
     background: rgba(128, 255, 0, 0.5);
 }
 
-#retangle4 {
+#retangle .slider:nth-child(4) {
+    right: -95vw;
     background: rgba(158, 51, 230, 0.5);
+}
+
+#retangle .slider:nth-child(3):hover,
+#retangle .slider:nth-child(4):hover {
+    right: 0;
 }
