@@ -9,3 +9,11 @@ export default function Choices(){
         </div>
     `;
 }
+/*
+$(function(){
+    $('.History').click(function(){ 
+        if(!$('#iframe').length) {
+                $('#iframeHolder').html('<iframe id="iframe" src="https://www.foxnews.com/" width="700" height="450"></iframe>');
+        }
+    });   
+});

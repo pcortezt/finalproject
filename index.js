@@ -1,6 +1,5 @@
 import Slider from './src/Slider';
 
-
 var State = {
     'active': 'choices'
 };
