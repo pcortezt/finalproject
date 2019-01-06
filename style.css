@@ -57,6 +57,16 @@ p {
     }
 }
 
+#wikipedia {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    color: hotpink;
+}
+
 #retangle {
     animation-delay: 5s;
     animation-name: recFadeIn;
