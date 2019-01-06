@@ -15,15 +15,22 @@ function render(state){
 
     container.innerHTML = sliders;
 
+    // document
+    //    .querySelectorAll('.choices button')
+    //      .forEach((button) => button.addEventListener('click', () => {
+    //         State.active = 'changes';
+
+    //           render(State);
+
     document
-        .querySelectorAll('.choices button')
-        .forEach((button) => button.addEventListener('click', () => {
-            State.active = 'changes';
+        .querySelector('.choices button')
+        .addEventListener('click', () => {
+            State.active = 'chossen';
 
             render(State);
-        }));
+        });
+    //      }));
 }
 
 render(State);
-
 
