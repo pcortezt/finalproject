@@ -1,7 +1,10 @@
 export default function Changes(){
     return `
-        <h2>
-            ch-ch-changes
-        </h2>
+        <div class="changes">
+            <button class="History">Background Color</button>
+            <button class="underErasure">Something more complex</button>
+            <button class="three">third</button>
+            <button class="four">fourth</button>
+        </div>
     `;
 }

@@ -1,10 +1,21 @@
 import Slider from './src/Slider';
+import Chosen from './src/Chosen';
 
-var State = {
-    'active': 'choices'
+var Sites = {
+    'History': 'https://www.wikipedia.org/',
+    'Under Erasure': 'https://en.wikipedia.org/wiki/Sous_rature'
 };
 
-var container = document.querySelector('#retangle');
+var State = {
+    'active': 'choices',
+    'iframeSource': ''
+};
+
+var root = document.querySelector('#root');
+
+function getSiteFromChoice(choice){
+    return Sites[choice] || '';
+}
 
 function render(state){
     var sliders = '';
@@ -13,23 +24,27 @@ function render(state){
         sliders += Slider(state);
     }
 
-    container.innerHTML = sliders;
-
-    // document
-    //    .querySelectorAll('.choices button')
-    //      .forEach((button) => button.addEventListener('click', () => {
-    //         State.active = 'changes';
-
-    //           render(State);
+    root.innerHTML = `
+        ${Chosen(state)}
+        <div id="retangle">
+            ${sliders}
+        </div>
+    `;
 
     document
-        .querySelector('.choices button')
-        .addEventListener('click', () => {
-            State.active = 'chossen';
+        .querySelectorAll('.choices button')
+        .forEach((button) => button.addEventListener('click', (event) => {
+            State.active = 'changes';
+            State.iframeSource = getSiteFromChoice(event.target.textContent);
 
             render(State);
-        });
-    //      }));
+        }));
+
+    document
+        .querySelectorAll('.changes button')
+        .forEach((button) => button.addEventListener('click', () => {
+            render(State);
+        }));
 }
 
 render(State);
