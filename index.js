@@ -4,7 +4,9 @@ import axios from 'axios';
 
 var Pages = {
     'History': 'History_of_Wikipedia',
-    'Under Erasure': 'Sous_rature'
+    'Under Erasure': 'Sous_rature',
+    'History of the Internet': 'History_of_the_Internet',
+    'Miss Spelling My Name': 'Philip_Temple'
 };
 
 var State = {
@@ -27,7 +29,7 @@ function render(state){
 
     root.innerHTML = `
         ${Chosen(state)}
-        <div id="retangle">
+        <div id="rectangle">
             ${sliders}
         </div>
     `;
@@ -36,9 +38,8 @@ function render(state){
         .querySelectorAll('.choices button')
         .forEach((button) => button.addEventListener('click', (event) => {
             State.active = 'changes';
-            
             axios
-                .get(`https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&explaintext&titles=${getPageFromChoice(event.target.textContent)}&origin=*`)
+                .get(`https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&titles=${getPageFromChoice(event.target.textContent)}&origin=*`)
                 .then((response) => {
                     State.content = Object
                         .values(response.data.query.pages)
