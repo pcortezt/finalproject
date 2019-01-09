@@ -48,7 +48,7 @@ function render(state){
                         .values(response.data.query.pages)
                         .map((page) => page.extract)
                         .join('');
-        
+
                     render(State);
                 });
 
@@ -60,7 +60,7 @@ function render(state){
         .querySelectorAll('.changes button')
         .forEach((button, index) => button.addEventListener('click', () => {
             State.classes = [ changeClasses[index % 4] ];
-           
+
             render(State);
         }));
 }
