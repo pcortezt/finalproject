@@ -11,8 +11,11 @@ var Pages = {
 
 var State = {
     'active': 'choices',
-    'content': ''
+    'content': '',
+    'classes': []
 };
+
+var changeClasses = [ 'alternate-background', 'strikethrough', 'foo', 'bar' ];
 
 var root = document.querySelector('#root');
 
@@ -52,9 +55,12 @@ function render(state){
             render(State);
         }));
 
+
     document
         .querySelectorAll('.changes button')
-        .forEach((button) => button.addEventListener('click', () => {
+        .forEach((button, index) => button.addEventListener('click', () => {
+            State.classes = [ changeClasses[index % 4] ];
+           
             render(State);
         }));
 }

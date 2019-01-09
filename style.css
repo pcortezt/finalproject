@@ -10,6 +10,14 @@ body {
 p {
     cursor: pointer;
 }
+ #looking{
+     position: absolute;
+     bottom: 1%;
+     right: 1%;
+     color: pink;
+     z-index: 99;
+ }
+
 #content {
     display: flex;
     flex-direction: column;
@@ -97,6 +105,13 @@ p {
 
 .choices{
     font-family: 'Allerta Stencil', sans-serif;   
+ }
+
+ #wikipedia.alternate-background {
+    background-color: hotpink;
+ }
+ #wikipedia.strikethrough{
+     background-color: green;
  }
 
  .History {
