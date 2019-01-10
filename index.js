@@ -59,7 +59,7 @@ function render(state){
     document
         .querySelectorAll('.changes button')
         .forEach((button, index) => button.addEventListener('click', () => {
-            State.classes = [ changeClasses[index % 4] ];
+            State.classes.push([ changeClasses[index % 4] ]);
 
             render(State);
         }));
