@@ -1,7 +1,7 @@
 export default function Chosen(state){
     if(state.content){
         return `
-            <div class="${state.classes.join(' ')}" id="wikipedia">
+            <div id="wikipedia" class="${state.classes.join(' ')}" >
                 ${state.content}
             </div>
 

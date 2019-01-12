@@ -2,6 +2,7 @@ import Slider from './src/Slider';
 import Chosen from './src/Chosen';
 import axios from 'axios';
 
+
 var Pages = {
     'History': 'History_of_Wikipedia',
     'Under Erasure': 'Sous_rature',
@@ -13,9 +14,12 @@ var State = {
     'active': 'choices',
     'content': '',
     'classes': []
+    
 };
 
-var changeClasses = [ 'alternate-background', 'strikethrough', 'foo', 'bar' ];
+var changeClasses = [ 'alternate-background', 'strikethrough', 'foo', 'bar', ];
+var changeText = [ 'TextColor', 'StrikeThrough', 'TextFont', 'RandomTextColor' ];
+var makeItBrutal = [ 'Brutalist1', 'Brutalist2', 'Brutalist3', 'Brutalist4' ];
 
 var root = document.querySelector('#root');
 
@@ -59,7 +63,29 @@ function render(state){
     document
         .querySelectorAll('.changes button')
         .forEach((button, index) => button.addEventListener('click', () => {
+            State.active = 'changes2';
             State.classes.push([ changeClasses[index % 4] ]);
+
+            render(State);
+        }));
+    
+
+    document
+    
+        .querySelectorAll('.changes2 button')
+        .forEach((button, index) => button.addEventListener('click', () => {
+            State.active = 'changes3';
+            State.classes.push([ changeText[index % 4] ]);
+
+            render(State);
+        }));
+
+
+    document
+        .querySelectorAll('.changes3 button')
+        .forEach((button, index) => button.addEventListener('click', () => {
+            State.active = 'changes3';
+            State.classes.push([ makeItBrutal[index % 4] ]);
 
             render(State);
         }));

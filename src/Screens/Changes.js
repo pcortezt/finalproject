@@ -4,7 +4,7 @@ export default function Changes(){
         <button class="History">Background Color</button>
         <button class="underErasure">Something more complex</button>
         <button class="three">Cursive is not Dead</button>
-        <button class="four">Radome Text Color</button>
+        <button class="four"> Radome Text Color</button>
     </div>
     `;
 }
