@@ -3,6 +3,49 @@ body {
     position: fixed;
 }
 
+.close {
+    
+    text-align: right;
+    top: 2;
+    transform: translate(-2%);
+    font-size: 250%;
+    color: orange;
+    cursor: pointer;
+    font-family: 'Allerta Stencil', sans-serif;
+}
+
+.popupWindow {
+    padding: 0;
+    margin: 0;
+    position: sticky;
+    width: 70vw;
+    height: 70vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    color: orange;
+    background-color: rgba(0, 0, 0, 0.81);
+    border: 3px solid orange;
+    z-index: 99;
+    max-height: 50vh;
+    overflow-y: auto;
+   
+    
+}
+
+.popupContent {
+    font-family: 'Allerta Stencil', sans-serif;
+    color: orange;
+    font-size: 150%;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+}
+
+
 /* turn off bullets on Wike pages*/
 
 ul {
@@ -244,39 +287,37 @@ ul {
     color: rgb(255, 0, 234);
 }
 
-#wikipedia.TextColor{
-
+#wikipedia.TextColor {
     color: rgb(255, 0, 0);
 }
 
-
-#wikipedia.StrikeThrough{
+#wikipedia.StrikeThrough {
     color: rgb(255, 183, 0);
 }
 
-#wikipedia.TextFont{
+#wikipedia.TextFont {
     color: rgb(94, 255, 0);
 }
 
-#wikipedia.RandomTextColor{
+#wikipedia.RandomTextColor {
     color: rgb(0, 255, 166);
 }
-#wikipedia.Brutalist1{
+
+#wikipedia.Brutalist1 {
     color: rgb(0, 51, 255);
 }
 
-#wikipedia.Brutalist2{
+#wikipedia.Brutalist2 {
     color: rgb(255, 247, 0);
 }
 
-#wikipedia.Brutalist3{
+#wikipedia.Brutalist3 {
     color: rgb(0, 238, 255);
 }
 
-#wikipedia.Brutalist4{
+#wikipedia.Brutalist4 {
     color: rgb(255, 0, 0);
 }
-
 
 /* Changing Font*/
 
@@ -420,4 +461,3 @@ ul {
 #rectangle .slider:nth-child(3):hover, #rectangle .slider:nth-child(4):hover {
     right: 0;
 }
-

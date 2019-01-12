@@ -84,7 +84,7 @@ function render(state){
     document
         .querySelectorAll('.changes3 button')
         .forEach((button, index) => button.addEventListener('click', () => {
-            State.active = 'changes3';
+            State.active = 'choices';
             State.classes.push([ makeItBrutal[index % 4] ]);
 
             render(State);
@@ -92,3 +92,7 @@ function render(state){
 }
 
 render(State);
+
+if('ontouchstart' in document.documentElement){
+    document.documentElement.className += ' touch';
+}

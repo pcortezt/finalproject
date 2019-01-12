@@ -1,6 +1,6 @@
 export default function Changes3(){
     return `
-    <div class="changes">
+    <div class="changes3">
         <button class="History">Brutalist</button>
         <button class="underErasure">Brutalist Again</button>
         <button class="three">Brutalist Even More</button>
