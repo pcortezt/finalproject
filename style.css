@@ -199,6 +199,8 @@ ul {
     font-size: 2vw;
     cursor: default;
     text-align: center;
+    padding: 10px 10vw;
+    box-sizing: border-box;
 }
 
 #rectangle {
