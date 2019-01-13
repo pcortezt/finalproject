@@ -40,9 +40,7 @@ function render(state){
 
     root.innerHTML = `
         ${Chosen(state)}
-        <div id="preview">
-            ${CodePreview(state)}
-        </div>
+        ${CodePreview(state)}
         <div id="rectangle">
             ${sliders}
         </div>
