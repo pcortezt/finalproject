@@ -433,11 +433,12 @@ ul {
     cursor: pointer;
 }
 
-.slider>div {
+.slider > div {
     display: none;
 }
 
-.slider:hover>div {
+.slider:hover > div,
+.slider:focus > div {
     display: block;
 }
 
