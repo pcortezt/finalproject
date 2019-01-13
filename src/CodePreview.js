@@ -2,7 +2,7 @@ export default function CodePreview(state){
     if(state.code){
         return `
             <div class="popupWindow">
-                <div class="close">x</div>
+                <button class="close">x</button>
                 <pre class="popupContent">
                     ${state.code}
                 </pre>

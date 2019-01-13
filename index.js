@@ -40,11 +40,13 @@ function render(state){
 
     root.innerHTML = `
         ${Chosen(state)}
+        <div id="preview">
+            ${CodePreview(state)}
+        </div>
         <div id="rectangle">
             ${sliders}
         </div>
         ${Undo(state)}
-        ${CodePreview(state)}
     `;
 
     document
