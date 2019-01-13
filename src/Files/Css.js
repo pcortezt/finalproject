@@ -1,56 +1,21 @@
+export default `
 body {
     background-color: rgb(0, 0, 0);
     position: fixed;
 }
 
-.close {
-    position: sticky;
-    text-align: right;
-    top: 0;
-    transform: translate(-2%);
-    font-size: 250%;
-    color: orange;
-    cursor: pointer;
-    font-family: 'Allerta Stencil', sans-serif;
-}
-
-#undo {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-}
-
-#hidden{
-    display: none;
-}
-
-.popupWindow {
-    padding: 0;
-    margin: 0;
-    position: sticky;
-    width: 70vw;
-    height: 70vw;
+.popup {
+    width: 50vw;
+    height: 50vw;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: block;
     color: orange;
-    background-color: rgba(0, 0, 0, 0.81);
+    background-color: black;
     border: 3px solid orange;
-    z-index: 99;
-    max-height: 50vh;
-    overflow-y: auto;
-}
-
-.popupContent {
-    font-family: 'Allerta Stencil', sans-serif;
-    color: orange;
-    font-size: 150%;
-    text-align: left;
-    padding: 0;
-    margin: 0;
-    position: absolute;
+    z-index: 9999;
 }
 
 /* turn off bullets on Wike pages*/
@@ -66,7 +31,7 @@ ul {
 
 /* SEE MY CODE */
 
-.preview-code {
+.dropbtn {
     font-family: 'Allerta Stencil', sans-serif;
     background-color: black;
     color: orange;
@@ -115,7 +80,7 @@ ul {
     display: block;
 }
 
-.dropup:hover .preview-code {
+.dropup:hover .dropbtn {
     background-color: orange;
     color: black;
     border: 3px solid black;
@@ -468,3 +433,6 @@ ul {
 #rectangle .slider:nth-child(3):hover, #rectangle .slider:nth-child(4):hover {
     right: 0;
 }
+}
+
+`;

@@ -1,5 +1,8 @@
 import Slider from './src/Slider';
 import Chosen from './src/Chosen';
+import CodePreview from './src/CodePreview';
+import Files from './src/Files';
+import Undo from './src/Undo';
 import axios from 'axios';
 
 
@@ -12,9 +15,9 @@ var Pages = {
 
 var State = {
     'active': 'choices',
+    'classes': [],
+    'code': '',
     'content': '',
-    'classes': []
-    
 };
 
 var changeClasses = [ 'alternate-background', 'strikethrough', 'foo', 'bar', ];
@@ -29,6 +32,7 @@ function getPageFromChoice(choice){
 
 function render(state){
     var sliders = '';
+    var closePreview;
 
     for(let i = 1; i < 5; i++){
         sliders += Slider(state);
@@ -39,6 +43,8 @@ function render(state){
         <div id="rectangle">
             ${sliders}
         </div>
+        ${Undo(state)}
+        ${CodePreview(state)}
     `;
 
     document
@@ -89,10 +95,34 @@ function render(state){
 
             render(State);
         }));
+
+    document
+        .querySelector('#undo')
+        .addEventListener('click', () => {
+            State.classes.pop();
+
+            render(State);
+        });
+
+    document
+        .querySelectorAll('.preview-code + div > button')
+        .forEach((button, index) => button.addEventListener('click', () => {
+            State.code = Files[index];
+
+            render(State);
+        }));
+
+    closePreview = document.querySelector('.close');
+
+    if(closePreview){
+        closePreview.addEventListener('click', () => {
+            State.code = '';
+
+            render(State);
+        });
+    }
 }
 
 render(State);
 
-if('ontouchstart' in document.documentElement){
-    document.documentElement.className += ' touch';
-}
+

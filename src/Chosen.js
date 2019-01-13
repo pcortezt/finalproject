@@ -4,7 +4,6 @@ export default function Chosen(state){
             <div id="wikipedia" class="${state.classes.join(' ')}" >
                 ${state.content}
             </div>
-
         `;
     }
     
