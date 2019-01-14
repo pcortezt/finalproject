@@ -7,10 +7,10 @@ import axios from 'axios';
 
 
 var Pages = {
-    'History': 'History_of_Wikipedia',
-    'Under Erasure': 'Sous_rature',
     'History of the Internet': 'History_of_the_Internet',
-    'Miss Spelling My Name': 'Philip_Temple'
+    'Under Erasure': 'Sous_rature',
+    'Who Writes History': 'Philosophy_of_history',
+    'Brutalist': 'Brutalist_architecture'
 };
 
 var State = {

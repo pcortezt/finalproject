@@ -23,6 +23,8 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
-    "escape-html": "^1.0.3"
+    "escape-html": "^1.0.3",
+    "jsesc": "^2.5.2",
+    "serialize-javascript": "^1.6.1"
   }
 }
