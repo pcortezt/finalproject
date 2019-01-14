@@ -6,7 +6,7 @@ export default `
   return \`
     <div class="slider">
       <div>
-        \${Playground(state)}
+        {Playground(state)}
   </div>
  </div>
  \`;

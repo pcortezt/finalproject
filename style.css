@@ -89,18 +89,12 @@ ul {
     bottom: 100%;
     right: 0%;
     z-index: 99;
-}
-
-.dropup-content a {
     color: orange;
     padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    min-width: 16px;
     border: 3px solid orange;
 }
 
-.dropup-content a:hover {
+.dropup-content:hover {
     background-color: orange;
     color: black;
     border: 3px solid black;
