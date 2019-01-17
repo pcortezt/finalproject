@@ -20,7 +20,7 @@ var State = {
     'content': '',
 };
 
-var changeClasses = [ 'backGroundGreen', 'backGroundBlue', 'foo', 'bar', ];
+var changeClasses = [ 'backGroundGreen', 'backGroundBlue', 'backGroundred', 'montyPython', ];
 var changeText = [ 'TextColor', 'StrikeThrough', 'TextFont', 'RandomTextColor' ];
 var makeItBrutal = [ 'Brutalist1', 'Brutalist2', 'Brutalist3', 'Brutalist4' ];
 
@@ -103,24 +103,6 @@ function render(state){
 
             render(State);
         });
-
-    document
-        .querySelectorAll('.preview-code + div > button')
-        .forEach((button, index) => button.addEventListener('click', () => {
-            State.code = Files[index];
-
-            render(State);
-        }));
-
-    closePreview = document.querySelector('.close');
-
-    if(closePreview){
-        closePreview.addEventListener('click', () => {
-            State.code = '';
-
-            render(State);
-        });
-    }
 }
 
 render(State);
