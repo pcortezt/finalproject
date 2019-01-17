@@ -20,7 +20,7 @@ var State = {
     'content': '',
 };
 
-var changeClasses = [ 'backGroundGreen', 'backGroundBlue', 'backGroundred', 'montyPython', ];
+var changeClasses = [ 'backGroundGreen', 'backGroundBlue', 'backGroundPink', 'montyPython', ];
 var changeText = [ 'TextColor', 'StrikeThrough', 'TextFont', 'RandomTextColor' ];
 var makeItBrutal = [ 'Brutalist1', 'Brutalist2', 'Brutalist3', 'Brutalist4' ];
 

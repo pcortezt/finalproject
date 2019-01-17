@@ -3,7 +3,7 @@ export default function Changes(){
     <div class="changes">
         <button class="History">Green</button>
         <button class="underErasure">Blue</button>
-        <button class="three">Red</button>
+        <button class="three">Pink</button>
         <button class="four">Monty Python</button>
     </div>
     `;

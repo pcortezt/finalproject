@@ -249,8 +249,8 @@ button {
     background-color: hotpink;
 }
 
-#wikipedia.backGroundRed {
-    background-color: red;
+#wikipedia.backGroundPink {
+    background-color: hotpink;
 }
 
 
@@ -351,7 +351,31 @@ button {
 }
 
 #wikipedia.RandomTextColor {
-    color: rgb(0, 255, 166);
+    background-color: red;
+    color: rgb(238, 127, 127);
+    animation-name: bgColorChange;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes bgColorChange {
+    15% {
+        color: rgb(237, 112, 112);
+    }
+    30% {
+        color: rgb(242, 76, 76);
+    }
+    45% {
+        color: rgb(240, 57, 57);
+    }
+    60% {
+        color: rgb(242, 76, 76);
+    }
+    75% {
+        color: rgb(237, 112, 112);
+    }
+    
 }
 
 #wikipedia.Brutalist1 {

@@ -4,7 +4,7 @@ export default function Changes2(){
         <button class="History">Text Color</button>
         <button class="underErasure">StrikeThrough</button>
         <button class="three">Cursive is not Dead</button>
-        <button class="four"> Random Text Color</button>
+        <button class="four">Red Wedding</button>
     </div>
     `;
 }
