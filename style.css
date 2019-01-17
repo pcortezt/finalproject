@@ -61,50 +61,59 @@ ul {
 
 /* SEE MY CODE */
 
-.preview-code {
+.previewCode {
     font-family: 'Allerta Stencil', sans-serif;
     background-color: black;
     color: orange;
-    padding: 14px;
+    padding: 20px;
     font-size: 16px;
     border: 3px solid orange;
     cursor: pointer;
 }
 
-.dropup {
+button {
+    background: black;
     font-family: 'Allerta Stencil', sans-serif;
-    position: absolute;
-    bottom: 3%;
-    right: 1%;
-    color: black;
-    z-index: 99;
+    color: orange;
+    border: 3px solid orange;
     cursor: pointer;
 }
 
-.dropup-content {
-    display: none;
+.preview {
     position: absolute;
-    background-color: black;
-    min-width: 16px;
-    bottom: 100%;
-    right: 0%;
-    z-index: 99;
-    color: orange;
-    padding: 12px 16px;
-    border: 3px solid orange;
+    right: 30px;
+    bottom: 20px;
+    margin: 0 auto;
+    z-index: 999;
 }
 
-.dropup-content:hover {
+.previewContent {
+    display: none;
+    position: absolute;
+    right: 80.5px;
+    bottom: 67.5px;
+    margin: 0 auto;
+    z-index: 999;
+    width: 60px;
+}
+
+.preview:hover {
     background-color: orange;
     color: black;
     border: 3px solid black;
 }
 
-.dropup:hover .dropup-content {
+.preview:hover .previewContent {
     display: block;
 }
 
-.dropup:hover .preview-code {
+.preview:hover .previewCode {
+    background-color: orange;
+    color: black;
+    border: 3px solid black;
+}
+
+.previewContent :hover {
     background-color: orange;
     color: black;
     border: 3px solid black;
@@ -112,11 +121,11 @@ ul {
 
 /* SEE MY CODE */
 
-.goBack {
+.home {
     font-family: 'Allerta Stencil', sans-serif;
     position: absolute;
-    bottom: 3%;
-    left: 1%;
+    bottom: 20px;
+    left: 30px;
     border: 3px solid orange;
     color: orange;
     z-index: 99;
@@ -127,7 +136,7 @@ ul {
     z-index: 999;
 }
 
-.goBack:hover {
+.home:hover {
     background-color: orange;
     color: black;
     border: 3px solid black;
@@ -271,19 +280,43 @@ ul {
 .question {
     font-family: 'Allerta Stencil', sans-serif;
     position: absolute;
-    bottom: 3%;
     font-size: 50px;
     color: orange;
     text-align: center;
-    left: 0%;
-    right: 0%;
     z-index: 99;
     cursor: pointer;
+    position: fixed;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
 }
 
-.question:hover {
-    color: rgb(255, 0, 234);
+.question:hover  {
+    color: rgb(0, 0, 0);
+    display: block;
 }
+
+.question :hover .answers{
+    display: block;
+    position: absolute;
+}
+
+.answers{
+    display: none;
+    z-index: 99;
+    color: orange;
+    background: rgb(0, 0, 0);
+    position: fixed;
+    left: 50%;
+    bottom: 100px;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    border: 3px solid orange;
+    font-size: 16px;
+    padding: 10px;    
+}
+
 
 #wikipedia.TextColor {
     color: rgb(255, 0, 0);
@@ -424,26 +457,12 @@ ul {
     cursor: pointer;
 }
 
-.slider > div {
+.slider>div {
     display: none;
 }
 
-.slider:hover > div,
-.slider:focus > div {
+.slider:hover>div, .slider:focus>div {
     display: block;
-}
-
-#preview {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    right: 0;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
 }
 
 #rectangle .slider:nth-child(1) {

@@ -1,7 +1,4 @@
-
-import escapeHtml from 'escape-html';
-
-export default escapeHtml(`
+export default `
 <!DOCTYPE html>
 <html lang="en-us">
 
@@ -58,4 +55,4 @@ export default escapeHtml(`
 </body>
 
 </html>
-`);
+`;
