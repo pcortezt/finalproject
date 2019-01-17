@@ -283,7 +283,7 @@ button {
     font-size: 50px;
     color: orange;
     text-align: center;
-    z-index: 99;
+    z-index: 999;
     cursor: pointer;
     position: fixed;
     left: 50%;
@@ -292,31 +292,37 @@ button {
     margin: 0 auto;
 }
 
-.question:hover  {
+.question:hover {
     color: rgb(0, 0, 0);
     display: block;
 }
 
-.question :hover .answers{
-    display: block;
+.answers {
     position: absolute;
-}
-
-.answers{
     display: none;
-    z-index: 99;
+    z-index: 999;
     color: orange;
     background: rgb(0, 0, 0);
     position: fixed;
     left: 50%;
-    bottom: 100px;
+    bottom: 1px;
     transform: translate(-50%, -50%);
     margin: 0 auto;
     border: 3px solid orange;
     font-size: 16px;
-    padding: 10px;    
+    padding: 10px;
 }
 
+.question:hover .answers {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+}
+
+.answers :hover {
+    display: block;
+    cursor: pointer;
+}
 
 #wikipedia.TextColor {
     color: rgb(255, 0, 0);
