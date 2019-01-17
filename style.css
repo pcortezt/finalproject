@@ -3,6 +3,10 @@ body {
     position: fixed;
 }
 
+body :focus {
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+}
 .close {
     position: absolute;
     top: 0;
