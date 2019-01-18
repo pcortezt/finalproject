@@ -353,13 +353,13 @@ button {
 #wikipedia.RandomTextColor {
     background-color: red;
     color: rgb(238, 127, 127);
-    animation-name: bgColorChange;
+    animation-name: redWedding;
     animation-duration: 10s;
     animation-iteration-count: infinite;
     
 }
 
-@keyframes bgColorChange {
+@keyframes redWedding {
     15% {
         color: rgb(237, 112, 112);
     }
@@ -378,20 +378,27 @@ button {
     
 }
 
-#wikipedia.Brutalist1 {
-    color: rgb(0, 51, 255);
+#wikipedia.Brutalist1 p{
+    color: green !important;
+    background: black !important;
 }
 
-#wikipedia.Brutalist2 {
-    color: rgb(255, 247, 0);
+#wikipedia.Brutalist2 p{
+    color: transparent !important;
+    background: transparent !important;
+    
 }
 
-#wikipedia.Brutalist3 {
-    color: rgb(0, 238, 255);
+#wikipedia.Brutalist3 p{
+    color: transparent !important;
+    background: transparent !important;
+    text-decoration: line-through !important;
 }
 
-#wikipedia.Brutalist4 {
-    color: rgb(255, 0, 0);
+#wikipedia.Brutalist4 p h1 h2 h3{
+    color: white !important;
+    background: black !important;
+
 }
 
 /* Changing Font*/
@@ -510,12 +517,12 @@ button {
 }
 
 #rectangle .slider:nth-child(1) {
-    left: -87vw;
+    left: -90vw;
     background: rgba(255, 230, 0, 0.3);
 }
 
 #rectangle .slider:nth-child(2) {
-    left: -93.5vw;
+    left: -95vw;
     background: rgba(255, 1, 34, 0.3);
 }
 
@@ -524,12 +531,12 @@ button {
 }
 
 #rectangle .slider:nth-child(3) {
-    right: -87vw;
+    right: -90vw;
     background: rgba(66, 187, 224, 0.3);
 }
 
 #rectangle .slider:nth-child(4) {
-    right: -93.5vw;
+    right: -95vw;
     background: rgba(166, 255, 0, 0.3);
 }
 
