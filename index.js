@@ -104,13 +104,6 @@ function render(state){
             render(State);
         });
 
-    document
-        .querySelectorAll('.previewCode + div > button')
-        .forEach((button, index) => button.addEventListener('click', () => {
-            State.code = Files[index];
-
-            render(State);
-        }));
 
     closePreview = document.querySelector('.close');
 
@@ -125,4 +118,11 @@ function render(state){
 
 render(State);
 
+document
+    .querySelectorAll('.previewCode + div > button')
+    .forEach((button, index) => button.addEventListener('click', () => {
+        State.code = Files[index];
+
+        render(State);
+    }));
 
