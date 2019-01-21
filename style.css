@@ -408,8 +408,8 @@ button {
 }
 
 #wikipedia.Brutalist4 {
-    background-color: red;
-    color: rgb(238, 127, 127);
+    background-color: black;
+    color: orange;
     animation-name: fontchange;
     animation-duration: 8s;
     animation-iteration-count: infinite;
