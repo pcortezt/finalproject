@@ -396,13 +396,13 @@ button {
 }
 
 #wikipedia.Brutalist2 p{
-    color: transparent !important;
+    color: black !important;
     background: transparent !important;
     
 }
 
 #wikipedia.Brutalist3 p{
-    color: transparent !important;
+    color: orange !important;
     background: transparent !important;
     text-decoration: line-through !important;
 }
